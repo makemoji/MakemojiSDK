@@ -1,5 +1,7 @@
 **Makemoji SDK**
 
+![](http://i.imgur.com/eWPO8GM.png)
+
 **Library Setup**
 
 1. If you are already using CocoaPods, add the following pods to your Podfile.
@@ -15,6 +17,8 @@
 3. Drag the MakemojiSDK folder to your project.
 
 3. In Xcode, click on your App Target -> Build Phases -> Link Binary with Libraries and add the following libraries.
+
+![](http://i.imgur.com/N7HL7Iu.png)
 
 		libsqlite3
 		libxml2
