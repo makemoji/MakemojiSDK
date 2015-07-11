@@ -1,4 +1,4 @@
-Makemoji SDK 1.0
+*Makemoji SDK 1.0*
 
 Library Setup
 
@@ -19,6 +19,8 @@ Library Setup
 
 To start using the MakemojiSDK you will first have to setup your API key in your AppDelegate 
 
+```objectivec
+
 	- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	    // Override point for customization after application launch.
 
@@ -28,16 +30,24 @@ To start using the MakemojiSDK you will first have to setup your API key in your
 	    return YES;
 	}
 
+```
+
 Next you will need to subclass MEChatViewController. This controller has a tableview that you can use for your chat and automatically handles resizing views for showing the keyboard.
+
+```objectivec
 
 	#import <UIKit/UIKit.h>
 	#import "MEChatViewController.h"
 
 	@interface ViewController : MEChatViewController
 
+```
+
 This view controller also has several callback methods that you will need to override
 
 The didTapSend callback gives you a dictionary of plaintext and HTML from the MakemojiSDK text view when the Send button is tapped.
+
+```objectivec
 
 	-(void)didTapSend:(NSDictionary *)messageDictionary {
 	    NSLog(@"Your Message - %@", messageDictionary);
@@ -48,38 +58,57 @@ The didTapSend callback gives you a dictionary of plaintext and HTML from the Ma
 	    [self scrollToBottom];
 	}
 
+```
+
 You can show or hide the built-in camera button by returning a boolean on the hasCameraButton method
+
+```objectivec
 
 	// show / hide Camera Button
 	-(BOOL)hasCameraButton {
 	    return YES;
 	}
 
+```
+
 To handle a action for the camera button, override the didTapCamera method
+
+```objectivec
 
 	// handle camera action
 	-(void)didTapCamera {
 
 	}
 
+```
+
 To handle the display of a webpage tapping on a Hypermoji ( a emoji with a URL link) override the didTapHypermoji method
+
+```objectivec
 
 	// handle tapping of links (Hypermoji)
 	-(void)didTapHypermoji:(NSString*)urlString {
 	    NSLog(@"%@", urlString);
 	}
 
+```
 
 We have included a optimized table view cell for displaying HTML messages. To use this table cell, you should use the following:
 
 Using the rowHeightForHTML method gives the row height for a message
+
+```objectivec
 
 	- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 	    NSDictionary * message = [self.messages objectAtIndex:indexPath.row];
 	    return [self rowHeightForHTML:[message objectForKey:@"html"] atIndexPath:indexPath];
 	}
 
+```
+
 You can set the MEChatTableViewCell to display on the left or right hand side using setCellDisplay. This should happen before setting your HTML for each message.
+
+```objectivec
 
 	- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	    static NSString *CellIdentifier = @"Cell";
@@ -104,4 +133,5 @@ You can set the MEChatTableViewCell to display on the left or right hand side us
 	    return cell;
 	}
 
+```
 
