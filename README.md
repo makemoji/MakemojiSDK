@@ -1,9 +1,10 @@
-**Makemoji SDK**
+Makemoji SDK
+====================
 
-![](http://i.imgur.com/eWPO8GM.png)
+![](http://i.imgur.com/4y2Du8N.jpg)
 
-**Library Setup**
-
+Library Setup
+---------------------
 1. If you are already using CocoaPods, add the following pods to your Podfile.
 
 		pod "AFNetworking"
@@ -24,8 +25,8 @@
 		libxml2
 		libz
 
-**SDK Usage**
-
+SDK Usage
+---------------------
 To start using the MakemojiSDK you will first have to setup your API key in your AppDelegate 
 
 ```objectivec
