@@ -1,21 +1,26 @@
-*Makemoji SDK 1.0*
+**Makemoji SDK**
 
-Library Setup
+**Library Setup**
 
-	1a. If you are already using CocoaPods, add the following pods to your Podfile
+1. If you are already using CocoaPods, add the following pods to your Podfile.
+
 		pod "AFNetworking"
-		pod 'SDWebImage'
+		pod "SDWebImage"
 
-	1b. If your are not using CocoaPods, be sure to include the following libraries
+2. If your are not using CocoaPods, be sure to include the following libraries.
+		
 		AFNetworking - https://github.com/AFNetworking/AFNetworking
 		SDWebImage - https://github.com/rs/SDWebImage
 
-	2. Drag the MakemojiSDK folder to your project.
+3. Drag the MakemojiSDK folder to your project.
 
-	3. In Xcode, click on your App Target -> Build Phases -> Link Binary with Libraries and add the following
+3. In Xcode, click on your App Target -> Build Phases -> Link Binary with Libraries and add the following libraries.
+
 		libsqlite3
 		libxml2
 		libz
+
+**SDK Usage**
 
 To start using the MakemojiSDK you will first have to setup your API key in your AppDelegate 
 
