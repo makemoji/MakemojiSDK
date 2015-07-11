@@ -3,6 +3,9 @@ Makemoji SDK
 
 ![](http://i.imgur.com/4y2Du8N.jpg)
 
+**Makemoji** is a free emoji keyboard for mobile apps. A 3rd party app installs our keyboard SDK and every user of that app will instantly have new emojis and more to talk about. Our goal is to increase user engagement as well as provide actionable real time data on sentiment (how users feel) and affinity (what users like). Because apps can now collect sentiment & affinity data in addition to age, gender and location... they will know more about their user base and their per-user valuation & company valuation will increase they second they implement our SDK. We also provide an extensive library of free emojis (in addition to iOS/Android’s 722 standard Unicode emojis) that are updated daily with trending emojis. New emojis are loaded in seamlessly through an Internet connection and do not require the user to update the app.
+
+
 Library Setup
 ---------------------
 1. If you are already using CocoaPods, add the following pods to your Podfile.
