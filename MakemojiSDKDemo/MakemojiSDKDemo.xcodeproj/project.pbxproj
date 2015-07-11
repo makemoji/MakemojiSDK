@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90B4B9C4D4A805C3845ACF1C /* libPods-MakemojiSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA21B03252CD5DFD8001B91 /* libPods-MakemojiSDKDemo.a */; };
+		C64A76731B449D350087F243 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C64A76721B449D350087F243 /* main.m */; };
+		C64A76761B449D350087F243 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C64A76751B449D350087F243 /* AppDelegate.m */; };
+		C64A76791B449D350087F243 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C64A76781B449D350087F243 /* ViewController.m */; };
+		C64A767C1B449D350087F243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64A767A1B449D350087F243 /* Main.storyboard */; };
+		C64A767E1B449D350087F243 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C64A767D1B449D350087F243 /* Images.xcassets */; };
+		C64A76811B449D350087F243 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C64A767F1B449D350087F243 /* LaunchScreen.xib */; };
+		C64A768D1B449D350087F243 /* MakemojiSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C64A768C1B449D350087F243 /* MakemojiSDKDemoTests.m */; };
+		C66C0F071B5096A800A3D52E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C66C0F061B5096A800A3D52E /* libz.dylib */; };
+		C66C0F091B5096C700A3D52E /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C66C0F081B5096C700A3D52E /* libxml2.dylib */; };
+		C66C0F0B1B5096DD00A3D52E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C66C0F0A1B5096DD00A3D52E /* libsqlite3.dylib */; };
+		C66C0F581B509C7F00A3D52E /* DTLoupe.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F3B1B509C7F00A3D52E /* DTLoupe.bundle */; };
+		C66C0F591B509C7F00A3D52E /* MEBackIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F3C1B509C7F00A3D52E /* MEBackIcon.png */; };
+		C66C0F5A1B509C7F00A3D52E /* MEBackIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F3D1B509C7F00A3D52E /* MEBackIcon@2x.png */; };
+		C66C0F5B1B509C7F00A3D52E /* MECameraIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F3E1B509C7F00A3D52E /* MECameraIcon.png */; };
+		C66C0F5C1B509C7F00A3D52E /* MECameraIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F3F1B509C7F00A3D52E /* MECameraIcon@2x.png */; };
+		C66C0F5D1B509C7F00A3D52E /* MEChatBotLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F401B509C7F00A3D52E /* MEChatBotLeft@2x.png */; };
+		C66C0F5E1B509C7F00A3D52E /* MEChatBotRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F411B509C7F00A3D52E /* MEChatBotRight@2x.png */; };
+		C66C0F5F1B509C7F00A3D52E /* MEDeleteIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F421B509C7F00A3D52E /* MEDeleteIcon@2x.png */; };
+		C66C0F601B509C7F00A3D52E /* MEFlashtagIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F431B509C7F00A3D52E /* MEFlashtagIcon.png */; };
+		C66C0F611B509C7F00A3D52E /* MEFlashtagIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F441B509C7F00A3D52E /* MEFlashtagIcon@2x.png */; };
+		C66C0F621B509C7F00A3D52E /* MEGridIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F451B509C7F00A3D52E /* MEGridIcon.png */; };
+		C66C0F631B509C7F00A3D52E /* MEGridIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F461B509C7F00A3D52E /* MEGridIcon@2x.png */; };
+		C66C0F641B509C7F00A3D52E /* MEKeyPop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F471B509C7F00A3D52E /* MEKeyPop@2x.png */; };
+		C66C0F651B509C7F00A3D52E /* MEMessageEntryBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F481B509C7F00A3D52E /* MEMessageEntryBackground.png */; };
+		C66C0F661B509C7F00A3D52E /* MEMessageEntryBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F491B509C7F00A3D52E /* MEMessageEntryBackground@2x.png */; };
+		C66C0F671B509C7F00A3D52E /* MEMessageEntryInputField.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F4A1B509C7F00A3D52E /* MEMessageEntryInputField.png */; };
+		C66C0F681B509C7F00A3D52E /* MEMessageEntryInputField@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F4B1B509C7F00A3D52E /* MEMessageEntryInputField@2x.png */; };
+		C66C0F691B509C7F00A3D52E /* MEPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F4C1B509C7F00A3D52E /* MEPlaceholder.png */; };
+		C66C0F6A1B509C7F00A3D52E /* MEStarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F4D1B509C7F00A3D52E /* MEStarIcon.png */; };
+		C66C0F6B1B509C7F00A3D52E /* MEStarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F4E1B509C7F00A3D52E /* MEStarIcon@2x.png */; };
+		C66C0F6C1B509C7F00A3D52E /* METrendingIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F4F1B509C7F00A3D52E /* METrendingIcon.png */; };
+		C66C0F6D1B509C7F00A3D52E /* METrendingIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F501B509C7F00A3D52E /* METrendingIcon@2x.png */; };
+		C66C0F6E1B509C7F00A3D52E /* libMakemojiSDK-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C66C0F511B509C7F00A3D52E /* libMakemojiSDK-1.0.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C64A76871B449D350087F243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C64A76651B449D350087F243 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C64A766C1B449D350087F243;
+			remoteInfo = MakemojiSDKDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5BA21B03252CD5DFD8001B91 /* libPods-MakemojiSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MakemojiSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E372812D6C086BE6090B71 /* Pods-MakemojiSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakemojiSDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MakemojiSDKDemo/Pods-MakemojiSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C64A766D1B449D350087F243 /* MakemojiSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakemojiSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64A76711B449D350087F243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C64A76721B449D350087F243 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C64A76741B449D350087F243 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C64A76751B449D350087F243 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C64A76771B449D350087F243 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C64A76781B449D350087F243 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C64A767B1B449D350087F243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C64A767D1B449D350087F243 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C64A76801B449D350087F243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C64A76861B449D350087F243 /* MakemojiSDKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakemojiSDKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64A768B1B449D350087F243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C64A768C1B449D350087F243 /* MakemojiSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakemojiSDKDemoTests.m; sourceTree = "<group>"; };
+		C66C0F061B5096A800A3D52E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C66C0F081B5096C700A3D52E /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		C66C0F0A1B5096DD00A3D52E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		C66C0F3B1B509C7F00A3D52E /* DTLoupe.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DTLoupe.bundle; sourceTree = "<group>"; };
+		C66C0F3C1B509C7F00A3D52E /* MEBackIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MEBackIcon.png; sourceTree = "<group>"; };
+		C66C0F3D1B509C7F00A3D52E /* MEBackIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MEBackIcon@2x.png"; sourceTree = "<group>"; };
+		C66C0F3E1B509C7F00A3D52E /* MECameraIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MECameraIcon.png; sourceTree = "<group>"; };
+		C66C0F3F1B509C7F00A3D52E /* MECameraIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MECameraIcon@2x.png"; sourceTree = "<group>"; };
+		C66C0F401B509C7F00A3D52E /* MEChatBotLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MEChatBotLeft@2x.png"; sourceTree = "<group>"; };
+		C66C0F411B509C7F00A3D52E /* MEChatBotRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MEChatBotRight@2x.png"; sourceTree = "<group>"; };
+		C66C0F421B509C7F00A3D52E /* MEDeleteIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MEDeleteIcon@2x.png"; sourceTree = "<group>"; };
+		C66C0F431B509C7F00A3D52E /* MEFlashtagIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MEFlashtagIcon.png; sourceTree = "<group>"; };
+		C66C0F441B509C7F00A3D52E /* MEFlashtagIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MEFlashtagIcon@2x.png"; sourceTree = "<group>"; };
+		C66C0F451B509C7F00A3D52E /* MEGridIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MEGridIcon.png; sourceTree = "<group>"; };
+		C66C0F461B509C7F00A3D52E /* MEGridIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MEGridIcon@2x.png"; sourceTree = "<group>"; };
+		C66C0F471B509C7F00A3D52E /* MEKeyPop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MEKeyPop@2x.png"; sourceTree = "<group>"; };
+		C66C0F481B509C7F00A3D52E /* MEMessageEntryBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MEMessageEntryBackground.png; sourceTree = "<group>"; };
+		C66C0F491B509C7F00A3D52E /* MEMessageEntryBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MEMessageEntryBackground@2x.png"; sourceTree = "<group>"; };
+		C66C0F4A1B509C7F00A3D52E /* MEMessageEntryInputField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MEMessageEntryInputField.png; sourceTree = "<group>"; };
+		C66C0F4B1B509C7F00A3D52E /* MEMessageEntryInputField@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MEMessageEntryInputField@2x.png"; sourceTree = "<group>"; };
+		C66C0F4C1B509C7F00A3D52E /* MEPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MEPlaceholder.png; sourceTree = "<group>"; };
+		C66C0F4D1B509C7F00A3D52E /* MEStarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MEStarIcon.png; sourceTree = "<group>"; };
+		C66C0F4E1B509C7F00A3D52E /* MEStarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MEStarIcon@2x.png"; sourceTree = "<group>"; };
+		C66C0F4F1B509C7F00A3D52E /* METrendingIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = METrendingIcon.png; sourceTree = "<group>"; };
+		C66C0F501B509C7F00A3D52E /* METrendingIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "METrendingIcon@2x.png"; sourceTree = "<group>"; };
+		C66C0F511B509C7F00A3D52E /* libMakemojiSDK-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libMakemojiSDK-1.0.a"; sourceTree = "<group>"; };
+		C66C0F521B509C7F00A3D52E /* MakemojiSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakemojiSDK.h; sourceTree = "<group>"; };
+		C66C0F531B509C7F00A3D52E /* MEChatTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEChatTableView.h; sourceTree = "<group>"; };
+		C66C0F541B509C7F00A3D52E /* MEChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEChatTableViewCell.h; sourceTree = "<group>"; };
+		C66C0F551B509C7F00A3D52E /* MEChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEChatViewController.h; sourceTree = "<group>"; };
+		C66C0F561B509C7F00A3D52E /* MEInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEInputAccessoryView.h; sourceTree = "<group>"; };
+		C66C0F571B509C7F00A3D52E /* MEInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEInputView.h; sourceTree = "<group>"; };
+		FD0D9F2DD2E4431184C033DA /* Pods-MakemojiSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakemojiSDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MakemojiSDKDemo/Pods-MakemojiSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C64A766A1B449D350087F243 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C66C0F6E1B509C7F00A3D52E /* libMakemojiSDK-1.0.a in Frameworks */,
+				C66C0F0B1B5096DD00A3D52E /* libsqlite3.dylib in Frameworks */,
+				C66C0F091B5096C700A3D52E /* libxml2.dylib in Frameworks */,
+				C66C0F071B5096A800A3D52E /* libz.dylib in Frameworks */,
+				90B4B9C4D4A805C3845ACF1C /* libPods-MakemojiSDKDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64A76831B449D350087F243 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3F89831214CDE32DBB02ECC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9E372812D6C086BE6090B71 /* Pods-MakemojiSDKDemo.debug.xcconfig */,
+				FD0D9F2DD2E4431184C033DA /* Pods-MakemojiSDKDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C64A76641B449D350087F243 = {
+			isa = PBXGroup;
+			children = (
+				C64A766F1B449D350087F243 /* MakemojiSDKDemo */,
+				C64A76891B449D350087F243 /* MakemojiSDKDemoTests */,
+				C64A766E1B449D350087F243 /* Products */,
+				B3F89831214CDE32DBB02ECC /* Pods */,
+				E0FAA03E0C21AF88C1D6DCE9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C64A766E1B449D350087F243 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C64A766D1B449D350087F243 /* MakemojiSDKDemo.app */,
+				C64A76861B449D350087F243 /* MakemojiSDKDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C64A766F1B449D350087F243 /* MakemojiSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C66C0F391B509C7F00A3D52E /* MakemojiSDK */,
+				C64A76741B449D350087F243 /* AppDelegate.h */,
+				C64A76751B449D350087F243 /* AppDelegate.m */,
+				C64A76771B449D350087F243 /* ViewController.h */,
+				C64A76781B449D350087F243 /* ViewController.m */,
+				C64A767A1B449D350087F243 /* Main.storyboard */,
+				C64A767D1B449D350087F243 /* Images.xcassets */,
+				C64A767F1B449D350087F243 /* LaunchScreen.xib */,
+				C64A76701B449D350087F243 /* Supporting Files */,
+			);
+			path = MakemojiSDKDemo;
+			sourceTree = "<group>";
+		};
+		C64A76701B449D350087F243 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C64A76711B449D350087F243 /* Info.plist */,
+				C64A76721B449D350087F243 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C64A76891B449D350087F243 /* MakemojiSDKDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C64A768C1B449D350087F243 /* MakemojiSDKDemoTests.m */,
+				C64A768A1B449D350087F243 /* Supporting Files */,
+			);
+			path = MakemojiSDKDemoTests;
+			sourceTree = "<group>";
+		};
+		C64A768A1B449D350087F243 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C64A768B1B449D350087F243 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C66C0F391B509C7F00A3D52E /* MakemojiSDK */ = {
+			isa = PBXGroup;
+			children = (
+				C66C0F3A1B509C7F00A3D52E /* Images */,
+				C66C0F511B509C7F00A3D52E /* libMakemojiSDK-1.0.a */,
+				C66C0F521B509C7F00A3D52E /* MakemojiSDK.h */,
+				C66C0F531B509C7F00A3D52E /* MEChatTableView.h */,
+				C66C0F541B509C7F00A3D52E /* MEChatTableViewCell.h */,
+				C66C0F551B509C7F00A3D52E /* MEChatViewController.h */,
+				C66C0F561B509C7F00A3D52E /* MEInputAccessoryView.h */,
+				C66C0F571B509C7F00A3D52E /* MEInputView.h */,
+			);
+			name = MakemojiSDK;
+			path = ../../MakemojiSDK;
+			sourceTree = "<group>";
+		};
+		C66C0F3A1B509C7F00A3D52E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C66C0F3B1B509C7F00A3D52E /* DTLoupe.bundle */,
+				C66C0F3C1B509C7F00A3D52E /* MEBackIcon.png */,
+				C66C0F3D1B509C7F00A3D52E /* MEBackIcon@2x.png */,
+				C66C0F3E1B509C7F00A3D52E /* MECameraIcon.png */,
+				C66C0F3F1B509C7F00A3D52E /* MECameraIcon@2x.png */,
+				C66C0F401B509C7F00A3D52E /* MEChatBotLeft@2x.png */,
+				C66C0F411B509C7F00A3D52E /* MEChatBotRight@2x.png */,
+				C66C0F421B509C7F00A3D52E /* MEDeleteIcon@2x.png */,
+				C66C0F431B509C7F00A3D52E /* MEFlashtagIcon.png */,
+				C66C0F441B509C7F00A3D52E /* MEFlashtagIcon@2x.png */,
+				C66C0F451B509C7F00A3D52E /* MEGridIcon.png */,
+				C66C0F461B509C7F00A3D52E /* MEGridIcon@2x.png */,
+				C66C0F471B509C7F00A3D52E /* MEKeyPop@2x.png */,
+				C66C0F481B509C7F00A3D52E /* MEMessageEntryBackground.png */,
+				C66C0F491B509C7F00A3D52E /* MEMessageEntryBackground@2x.png */,
+				C66C0F4A1B509C7F00A3D52E /* MEMessageEntryInputField.png */,
+				C66C0F4B1B509C7F00A3D52E /* MEMessageEntryInputField@2x.png */,
+				C66C0F4C1B509C7F00A3D52E /* MEPlaceholder.png */,
+				C66C0F4D1B509C7F00A3D52E /* MEStarIcon.png */,
+				C66C0F4E1B509C7F00A3D52E /* MEStarIcon@2x.png */,
+				C66C0F4F1B509C7F00A3D52E /* METrendingIcon.png */,
+				C66C0F501B509C7F00A3D52E /* METrendingIcon@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		E0FAA03E0C21AF88C1D6DCE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C66C0F0A1B5096DD00A3D52E /* libsqlite3.dylib */,
+				C66C0F081B5096C700A3D52E /* libxml2.dylib */,
+				C66C0F061B5096A800A3D52E /* libz.dylib */,
+				5BA21B03252CD5DFD8001B91 /* libPods-MakemojiSDKDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C64A766C1B449D350087F243 /* MakemojiSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C64A76901B449D350087F243 /* Build configuration list for PBXNativeTarget "MakemojiSDKDemo" */;
+			buildPhases = (
+				7FE7A4305E4E19F5E83A01F1 /* Check Pods Manifest.lock */,
+				C64A76691B449D350087F243 /* Sources */,
+				C64A766A1B449D350087F243 /* Frameworks */,
+				C64A766B1B449D350087F243 /* Resources */,
+				12034425751EF922F41F1231 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MakemojiSDKDemo;
+			productName = MakemojiSDKDemo;
+			productReference = C64A766D1B449D350087F243 /* MakemojiSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C64A76851B449D350087F243 /* MakemojiSDKDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C64A76931B449D350087F243 /* Build configuration list for PBXNativeTarget "MakemojiSDKDemoTests" */;
+			buildPhases = (
+				C64A76821B449D350087F243 /* Sources */,
+				C64A76831B449D350087F243 /* Frameworks */,
+				C64A76841B449D350087F243 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C64A76881B449D350087F243 /* PBXTargetDependency */,
+			);
+			name = MakemojiSDKDemoTests;
+			productName = MakemojiSDKDemoTests;
+			productReference = C64A76861B449D350087F243 /* MakemojiSDKDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C64A76651B449D350087F243 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Makemoji;
+				TargetAttributes = {
+					C64A766C1B449D350087F243 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					C64A76851B449D350087F243 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = C64A766C1B449D350087F243;
+					};
+				};
+			};
+			buildConfigurationList = C64A76681B449D350087F243 /* Build configuration list for PBXProject "MakemojiSDKDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C64A76641B449D350087F243;
+			productRefGroup = C64A766E1B449D350087F243 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C64A766C1B449D350087F243 /* MakemojiSDKDemo */,
+				C64A76851B449D350087F243 /* MakemojiSDKDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C64A766B1B449D350087F243 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C66C0F621B509C7F00A3D52E /* MEGridIcon.png in Resources */,
+				C66C0F681B509C7F00A3D52E /* MEMessageEntryInputField@2x.png in Resources */,
+				C64A767C1B449D350087F243 /* Main.storyboard in Resources */,
+				C66C0F671B509C7F00A3D52E /* MEMessageEntryInputField.png in Resources */,
+				C66C0F5F1B509C7F00A3D52E /* MEDeleteIcon@2x.png in Resources */,
+				C66C0F601B509C7F00A3D52E /* MEFlashtagIcon.png in Resources */,
+				C64A76811B449D350087F243 /* LaunchScreen.xib in Resources */,
+				C66C0F6D1B509C7F00A3D52E /* METrendingIcon@2x.png in Resources */,
+				C66C0F5B1B509C7F00A3D52E /* MECameraIcon.png in Resources */,
+				C66C0F6A1B509C7F00A3D52E /* MEStarIcon.png in Resources */,
+				C66C0F641B509C7F00A3D52E /* MEKeyPop@2x.png in Resources */,
+				C66C0F6B1B509C7F00A3D52E /* MEStarIcon@2x.png in Resources */,
+				C66C0F6C1B509C7F00A3D52E /* METrendingIcon.png in Resources */,
+				C66C0F5A1B509C7F00A3D52E /* MEBackIcon@2x.png in Resources */,
+				C66C0F5C1B509C7F00A3D52E /* MECameraIcon@2x.png in Resources */,
+				C66C0F661B509C7F00A3D52E /* MEMessageEntryBackground@2x.png in Resources */,
+				C66C0F631B509C7F00A3D52E /* MEGridIcon@2x.png in Resources */,
+				C66C0F5E1B509C7F00A3D52E /* MEChatBotRight@2x.png in Resources */,
+				C66C0F691B509C7F00A3D52E /* MEPlaceholder.png in Resources */,
+				C66C0F651B509C7F00A3D52E /* MEMessageEntryBackground.png in Resources */,
+				C64A767E1B449D350087F243 /* Images.xcassets in Resources */,
+				C66C0F581B509C7F00A3D52E /* DTLoupe.bundle in Resources */,
+				C66C0F611B509C7F00A3D52E /* MEFlashtagIcon@2x.png in Resources */,
+				C66C0F5D1B509C7F00A3D52E /* MEChatBotLeft@2x.png in Resources */,
+				C66C0F591B509C7F00A3D52E /* MEBackIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64A76841B449D350087F243 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12034425751EF922F41F1231 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MakemojiSDKDemo/Pods-MakemojiSDKDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FE7A4305E4E19F5E83A01F1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C64A76691B449D350087F243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C64A76791B449D350087F243 /* ViewController.m in Sources */,
+				C64A76761B449D350087F243 /* AppDelegate.m in Sources */,
+				C64A76731B449D350087F243 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64A76821B449D350087F243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C64A768D1B449D350087F243 /* MakemojiSDKDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C64A76881B449D350087F243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C64A766C1B449D350087F243 /* MakemojiSDKDemo */;
+			targetProxy = C64A76871B449D350087F243 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C64A767A1B449D350087F243 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C64A767B1B449D350087F243 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C64A767F1B449D350087F243 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C64A76801B449D350087F243 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C64A768E1B449D350087F243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C64A768F1B449D350087F243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C64A76911B449D350087F243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9E372812D6C086BE6090B71 /* Pods-MakemojiSDKDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MakemojiSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MakemojiSDK",
+					/Volumes/250,
+					"SSD/MakemojiSDK-1.0/MakemojiSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C64A76921B449D350087F243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD0D9F2DD2E4431184C033DA /* Pods-MakemojiSDKDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MakemojiSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MakemojiSDK",
+					/Volumes/250,
+					"SSD/MakemojiSDK-1.0/MakemojiSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C64A76941B449D350087F243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MakemojiSDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MakemojiSDKDemo.app/MakemojiSDKDemo";
+			};
+			name = Debug;
+		};
+		C64A76951B449D350087F243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MakemojiSDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MakemojiSDKDemo.app/MakemojiSDKDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C64A76681B449D350087F243 /* Build configuration list for PBXProject "MakemojiSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C64A768E1B449D350087F243 /* Debug */,
+				C64A768F1B449D350087F243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C64A76901B449D350087F243 /* Build configuration list for PBXNativeTarget "MakemojiSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C64A76911B449D350087F243 /* Debug */,
+				C64A76921B449D350087F243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C64A76931B449D350087F243 /* Build configuration list for PBXNativeTarget "MakemojiSDKDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C64A76941B449D350087F243 /* Debug */,
+				C64A76951B449D350087F243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C64A76651B449D350087F243 /* Project object */;
+}
