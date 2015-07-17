@@ -189,3 +189,10 @@ You can set the MEChatTableViewCell to display on the left or right hand side us
 
 ```
 
+FAQ
+---------------------
+
+*	The Makemoji SDK is completely free.*	All emojis are served from AWS S3.*	We do not store your messages. Your app backend will have to process and serve messages created with our SDK.*	We do not send push notifications.
+*	Your app's message volume does not affect the performance of our SDK.
+*	Messages are composed of simple HTML containing image and paragraph tags. Formatting is presented as inline CSS.
+
