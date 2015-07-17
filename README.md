@@ -43,7 +43,7 @@ Library Setup
 SDK Usage
 ---------------------
 
-**Initilization**
+**Initialization**
 
 To start using the MakemojiSDK you will first have to add a few lines to your AppDelegate. 
 
