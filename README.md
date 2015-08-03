@@ -20,10 +20,9 @@ To obtain your SDK key please email: sdk@makemoji.com
 
 Library Setup
 ---------------------
-* If you are already using CocoaPods, add the following pods to your Podfile.
+* If you are already using CocoaPods, add the pod to your Podfile.
 
-		pod "AFNetworking"
-		pod "SDWebImage"
+		pod "Makemoji-SDK"
 
 * If your are not using CocoaPods, be sure to include the following libraries.
 		
