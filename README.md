@@ -1,7 +1,7 @@
 Makemoji SDK
 ====================
 
-![](http://i.imgur.com/xflFwXF.png)
+![](http://i.imgur.com/z9MESlX.png)
 
 **Makemoji** is a free emoji keyboard for mobile apps. 
 
