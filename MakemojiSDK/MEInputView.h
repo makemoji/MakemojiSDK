@@ -11,7 +11,7 @@
     @property UIButton * deleteButton;
     @property UIButton * globeButton;
     @property UIPageControl * pageControl;
-    @property id delegate;
+    @property (assign) id delegate;
     @property UILabel * titleLabel;
     @property NSIndexPath * selectedCategory;
 

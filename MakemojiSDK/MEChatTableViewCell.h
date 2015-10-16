@@ -19,6 +19,7 @@ typedef enum
 @property NSString * imageUrl;
 @property UIImageView * attachmentView;
 @property MECellDisplay cellDisplay;
+@property UIView * messageView;
 
 // set HTML for the cell
 - (void)setHTMLString:(NSString *)html;

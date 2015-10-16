@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MEChatViewController.h"
+#import "METextInputView.h"
 
-@interface ViewController : MEChatViewController
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, METextInputViewDelegate>
+@property UITableView * tableView;
 @property (nonatomic, retain) NSMutableArray * messages;
-
+@property (nonatomic, retain) METextInputView * meTextInputView;
 @end
 

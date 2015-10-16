@@ -29,6 +29,8 @@
 // flashtag horizontal collection view
 @property UICollectionView * flashtagCollectionView;
 
+@property BOOL flashtagOnly;
+
 -(void)didSelectEmoji:(NSDictionary *)emoji image:(UIImage *)image;
 -(void)didSelectCategory;
 -(void)deleteButtonTapped;
@@ -38,5 +40,5 @@
 -(void)textViewDidEndEditing:(id)textView;
 -(void)textViewDidChangeSelection:(id)textView;
 -(void)textViewDidChange:(id)textView;
-
+-(void)introBarAnimation;
 @end

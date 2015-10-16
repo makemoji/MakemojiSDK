@@ -1,7 +1,7 @@
 Makemoji SDK
 ====================
 
-![](http://i.imgur.com/w0KJkBv.jpg)
+![](http://i.imgur.com/xflFwXF.png)
 
 **Makemoji** is a free emoji keyboard for mobile apps. 
 
@@ -10,6 +10,9 @@ By installing our keyboard SDK every user of your app will instantly have access
 * Extensive library of free emoji
 * 722 standard Unicode emoji
 * Makemoji *Flashtag* inline search system
+
+![](http://i.imgur.com/KjrJ8pW.gif)
+
 * New emoji load dynamically and does not require a app update
 * Analytics Dashboard & CMS
 
@@ -20,11 +23,8 @@ To obtain your SDK key please email: sdk@makemoji.com
 
 Library Setup
 ---------------------
-* If you are already using CocoaPods, you can install the SDK by adding this to your Podfile.
 
-		pod "Makemoji-SDK"
-
-* If you would like to use the library manually, but still use cocoapods, include the following in you Podfile
+* If you are using CocoaPods for dependencies, include the following.
 
 		pod "AFNetworking"
 		pod "SDWebImage"
@@ -72,34 +72,64 @@ Then on launch, setup your SDK key.
 ```
 
 
-**Setup a ViewController**
+**Setup a the Makemoji TextInput**
 
-Next you will need setup a view controller to subclass MEChatViewController. This controller has a UITableView (tableView) that you can use for your chat and automatically handles resizing views for showing the keyboard.
+Next you will need setup a view controller and add the METextInputView as a property. You will also need to make this conform to the METextInputViewDelegate protocol.
 
 ```objectivec
 
 	#import <UIKit/UIKit.h>
-	#import "MEChatViewController.h"
+	#import "METextInputView.h"
 
-	@interface ViewController : MEChatViewController
+	@interface ViewController : UIViewController <METextInputViewDelegate>
+	
+	@property (nonatomic, retain) METextInputView * meTextInputView;
+	
+	@end
+
+```
+
+In your view controller during viewDidLoad or init, initialize the METextInputView.
+
+```objectivec
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.meTextInputView = [[METextInputView alloc] initWithFrame:CGRectZero];
+    self.meTextInputView.delegate = self;
+    [self.view addSubview:self.meTextInputView];
+        
+}
+
+```
+
+**Handling Keyboard & Input Size Changes**
+
+You will need to handle keyboard appearance resizing and text input size changes. The didChangeFrame delegate method is called when these events occur.
+
+```objectivec
+
+-(void)meTextInputView:(METextInputView *)inputView didChangeFrame:(CGRect)frame {
+    self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, self.tableView.frame.origin.y, self.tableView.frame.size.width, self.meTextInputView.frame.origin.y);
+
+}
 
 ```
 
 
 **Send a Message**
 
-MEChatViewController also has several callback methods that you will need to override. The didTapSend callback gives you a dictionary of plaintext and HTML from the MakemojiSDK text view when the Send button is tapped.
+The didTapSend delegate callback gives you a dictionary of plaintext and HTML from the MakemojiSDK text view when the Send button is tapped.
 
 ```objectivec
 
-	-(void)didTapSend:(NSDictionary *)messageDictionary {
-	    NSLog(@"Your Message - %@", messageDictionary);
-	    [self.messages addObject:messageDictionary];
-	    [self.tableView reloadData];
-	    
-	    // scroll the table view to the bottom
-	    [self scrollToBottom];
-	}
+-(void)meTextInputView:(METextInputView *)inputView didTapSend:(NSDictionary *)message {
+    NSLog(@"%@", message);
+    // send message to your backend here
+    [self.messages addObject:message];
+    [self.tableView reloadData];
+}
 
 ```
 
@@ -112,38 +142,34 @@ You would then send this to your backend to store the message.
 
 **Camera Button**
 
-This is a standard UIButton that can be customized. To handle a action for the camera button, override the didTapCamera method
+This is a standard UIButton that can be customized. To handle a action for the camera button use the didTapCameraButton delegate callback.
 
 ```objectivec
 
-	// handle camera action
-	-(void)didTapCamera {
-		// handle camera capture
-	}
+-(void)meTextInputView:(METextInputView *)inputView didTapCameraButton:(UIButton*)cameraButton {
+    // Present image controller
+}
 
 ```
 
-You can show or hide the built-in camera button by returning a boolean on the hasCameraButton method
+You can show or hide the built-in camera by calling the displayCameraButton method on METextInputView
 
 ```objectivec
 
-	// show / hide Camera Button
-	-(BOOL)hasCameraButton {
-	    return YES;
-	}
+   [self.meTextInputView displayCameraButton:NO];
 
 ```
 
 **Hypermoji - Emoji with a URL**
 
 
-To handle the display of a webpage tapping on a Hypermoji ( a emoji with a URL link), override the didTapHypermoji method
+To handle the display of a webpage when tapping on a Hypermoji ( a emoji with a URL link), use the didTapHypermoji delegate callback
 
 ```objectivec
 
 	// handle tapping of links (Hypermoji)
-	-(void)didTapHypermoji:(NSString*)urlString {
-	    NSLog(@"%@", urlString);
+	-(void)meTextInputView:(METextInputView *)inputView didTapHypermoji:(NSString*)urlString {
+	    // open webview here
 	}
 
 ```
@@ -151,16 +177,24 @@ To handle the display of a webpage tapping on a Hypermoji ( a emoji with a URL l
 
 **Displaying Messages**
 
-We have included a optimized UITableViewCell for displaying HTML messages.
+We have included a optimized UITableViewCells for displaying HTML messages. MEChatTableViewCell mimics iMessage display behavior and includes a simple image attachment feature. MESimpleTableViewCell is provided for extensive customization options.
 
-Use the rowHeightForHTML method to give you the row height for a html message.
+Use the cellHeightForHTML method to give you the row height for a html message. This method caches cell heights for increased performance.
 
 ```objectivec
 
-	- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-	    NSDictionary * message = [self.messages objectAtIndex:indexPath.row];
-	    return [self rowHeightForHTML:[message objectForKey:@"html"] atIndexPath:indexPath];
-	}
+// determine row height with HTML
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (self.meTextInputView == nil) {
+        return 0;
+    }
+    
+    NSDictionary * message = [self.messages objectAtIndex:indexPath.row];
+    return [self.meTextInputView cellHeightForHTML:[message objectForKey:@"html"]
+                                       atIndexPath:indexPath
+                                      maxCellWidth:self.tableView.frame.size.width
+                                         cellStyle:MECellStyleChat];
+}
 
 ```
 
@@ -192,6 +226,7 @@ You can set the MEChatTableViewCell to display on the left or right hand side us
 	}
 
 ```
+
 
 FAQ
 ---------------------
