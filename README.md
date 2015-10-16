@@ -1,7 +1,7 @@
 Makemoji SDK
 ====================
 
-![](http://i.imgur.com/vrpx4TM.png)
+![](http://i.imgur.com/Htwh2Ir.png)
 
 **Makemoji** is a free emoji keyboard for mobile apps. 
 
@@ -43,6 +43,20 @@ Library Setup
 		libsqlite3
 		libxml2
 		libz
+
+* With iOS 9, you will need to include a exception for AWS S3 in your Info.plist for App Transport.
+
+```
+<dict>
+	<key>NSAllowsArbitraryLoads</key>
+	<true/>
+	<key>s3.amazonaws.com</key>
+	<dict>
+		<key>NSExceptionAllowsInsecureHTTPLoads</key>
+		<true/>
+	</dict>
+</dict>
+```
 
 SDK Usage
 ---------------------
