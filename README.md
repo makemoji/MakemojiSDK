@@ -118,6 +118,22 @@ In your view controller during viewDidLoad or init, initialize the METextInputVi
 
 ```
 
+**Detached Text Input**
+
+![](http://i.imgur.com/MEG8Sn8.png)
+
+If you need the Text Input detached from the keyboard, you will need to call the detachTextInputView method and then add textInputContainerView to your view.
+
+```objectivec
+    [self.meTextInputView detachTextInputView:YES];
+    [self.view addSubview:self.meTextInputView.textInputContainerView];
+
+```
+
+Since the Send Button and Camera button are hidden in this mode, you will need to call attach a button to the sendMessage method to trigger capturing the text.
+
+See the included MakemojiSDKDemo app for a full example of how to set this up.
+
 **Handling Keyboard & Input Size Changes**
 
 You will need to handle keyboard appearance resizing and text input size changes. The didChangeFrame delegate method is called when these events occur.

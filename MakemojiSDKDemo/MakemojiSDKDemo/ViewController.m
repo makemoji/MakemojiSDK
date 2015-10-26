@@ -21,8 +21,16 @@
     
     self.meTextInputView = [[METextInputView alloc] initWithFrame:CGRectZero];
     self.meTextInputView.delegate = self;
-
     [self.view addSubview:self.meTextInputView];
+    
+    //self.meTextInputView.meAccessory.flashtagOnly = YES;
+    
+    // optional detached textInput view
+    //to use your own positioning, add the textInputContainerView to your view
+    //[self.meTextInputView setFontSize:16.0f];
+    //[self.meTextInputView detachTextInputView:YES];
+    //[self.view addSubview:self.meTextInputView.textInputContainerView];
+    //[self.meTextInputView.textInputContainerView setFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
     
     self.tableView = [[UITableView alloc] initWithFrame:CGRectZero];
     self.tableView.backgroundColor = [UIColor whiteColor];
@@ -44,6 +52,16 @@
     self.tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-self.meTextInputView.frame.size.height);
 }
 
+// send button was pressed
+-(void)didTapSend:(NSDictionary *)messageDictionary {
+    NSLog(@"Your Message - %@", messageDictionary);
+    [self.messages addObject:messageDictionary];
+    [self.tableView reloadData];
+    
+    // scroll the table view to the bottom
+    [self scrollToBottom];
+}
+
 // handle tapping on linked emoji
 -(void)meTextInputView:(METextInputView *)inputView didTapHypermoji:(NSString*)urlString {
     NSLog(@"%@", urlString);
@@ -52,8 +70,11 @@
 // the chat input frame changed size (keyboard show, expanding input)
 -(void)meTextInputView:(METextInputView *)inputView didChangeFrame:(CGRect)frame {
     self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, self.tableView.frame.origin.y, self.tableView.frame.size.width, self.meTextInputView.frame.origin.y);
-    
     [self scrollToBottom];
+    
+    if (self.meTextInputView.detachedTextInput == YES) {
+        [self.meTextInputView.textInputContainerView setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.meTextInputView.frame.origin.y)];
+    }
 }
 
 // send button was pressed
