@@ -147,7 +147,6 @@ You will need to handle keyboard appearance resizing and text input size changes
 
 ```
 
-
 **Send a Message**
 
 The didTapSend delegate callback gives you a dictionary of plaintext and HTML from the MakemojiSDK text view when the Send button is tapped.
@@ -169,6 +168,11 @@ The *messageDictionary* returns the following
 
 You would then send this to your backend to store the message.
 
+You can show or hide the built-in send button by setting the displaySendButton property on METextInputView
+
+```objectivec
+   self.meTextInputView.displaySendButton = NO;
+```
 
 **Camera Button**
 
@@ -182,13 +186,12 @@ This is a standard UIButton that can be customized. To handle a action for the c
 
 ```
 
-You can show or hide the built-in camera by calling the displayCameraButton method on METextInputView
+You can show or hide the built-in camera by setting the displayCameraButton property on METextInputView
 
 ```objectivec
-
-   [self.meTextInputView displayCameraButton:NO];
-
+   self.meTextInputView.displayCameraButton = NO;
 ```
+
 
 **Hypermoji - Emoji with a URL**
 

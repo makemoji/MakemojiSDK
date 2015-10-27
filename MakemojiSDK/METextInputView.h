@@ -40,6 +40,11 @@ typedef enum
 // the navigation / trending keyboard bar
 @property IBOutlet MEInputAccessoryView * meAccessory;
 
+@property UIReturnKeyType keyboardReturnKeyType;
+@property UIKeyboardType keyboardType;
+
+@property BOOL displayCameraButton;
+@property BOOL displaySendButton;
 
 @property CGFloat currentKeyboardPosition;
 
@@ -49,10 +54,10 @@ typedef enum
 // textView delegate
 @property (assign) id <METextInputViewDelegate> delegate;
 
+// current state of detached input
 @property BOOL detachedTextInput;
 
-// return YES on this method to show the camera button
--(void)displayCameraButton:(BOOL)option;
+// perform detachment
 -(void)detachTextInputView:(BOOL)option;
 
 -(void)showKeyboard;
@@ -70,6 +75,4 @@ typedef enum
     -(void)meTextInputView:(METextInputView *)inputView didTapHypermoji:(NSString*)urlString;
     -(void)meTextInputView:(METextInputView *)inputView didTapCameraButton:(UIButton*)cameraButton;
     -(void)meTextInputView:(METextInputView *)inputView didChangeFrame:(CGRect)frame;
-    //@optional
-    //-(void)metextInputView:(METextInputView *)inputView textDidChange;
 @end

@@ -21,12 +21,17 @@
     
     self.meTextInputView = [[METextInputView alloc] initWithFrame:CGRectZero];
     self.meTextInputView.delegate = self;
-    [self.view addSubview:self.meTextInputView];
     
+    // possible options
+    //self.meTextInputView.displaySendButton = NO;
+    //self.meTextInputView.displayCameraButton = NO;
+    //self.meTextInputView.keyboardReturnKeyType = UIReturnKeySend;
     //self.meTextInputView.meAccessory.flashtagOnly = YES;
     
+    [self.view addSubview:self.meTextInputView];
+    
     // optional detached textInput view
-    //to use your own positioning, add the textInputContainerView to your view
+    // to use your own positioning, add the textInputContainerView to your view
     //[self.meTextInputView setFontSize:16.0f];
     //[self.meTextInputView detachTextInputView:YES];
     //[self.view addSubview:self.meTextInputView.textInputContainerView];
