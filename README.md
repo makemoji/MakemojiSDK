@@ -268,3 +268,4 @@ FAQ
 *	Your app's message volume does not affect the performance of our SDK.
 *	Messages are composed of simple HTML containing image and paragraph tags. Formatting is presented as inline CSS.
 
+*	Will work with any built-in iOS keyboard or return type
