@@ -269,3 +269,14 @@ FAQ
 *	Messages are composed of simple HTML containing image and paragraph tags. Formatting is presented as inline CSS.
 
 *	Will work with any built-in iOS keyboard or return type
+
+*  All network operations happen asyncronously and do not block the User Interface
+
+Service Performance
+---------------------
+
+* Avg Service Repsonse Time: 100ms
+ 
+* Hosted with AWS using Elastic Beanstalk & RDS
+
+* Scales seamlessly to meet traffic demands
