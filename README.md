@@ -103,7 +103,7 @@ Next you will need setup a view controller and add the METextInputView as a prop
 
 ```
 
-In your view controller during viewDidLoad or init, initialize the METextInputView.
+In your view controller during viewDidLoad or init, initialize the METextInputView. Use the showKeyboard method to make the text input field the first responder.
 
 ```objectivec
 
@@ -114,6 +114,11 @@ In your view controller during viewDidLoad or init, initialize the METextInputVi
     self.meTextInputView.delegate = self;
     [self.view addSubview:self.meTextInputView];
         
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.meTextInputView showKeyboard];
 }
 
 ```
