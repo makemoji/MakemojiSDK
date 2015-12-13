@@ -28,6 +28,7 @@
 
 // flashtag horizontal collection view
 @property UICollectionView * flashtagCollectionView;
+@property UICollectionView * emojiView;
 
 @property BOOL flashtagOnly;
 
@@ -41,4 +42,6 @@
 -(void)textViewDidChangeSelection:(id)textView;
 -(void)textViewDidChange:(id)textView;
 -(void)introBarAnimation;
+-(void)setNavigationBackgroundColor:(UIColor *)color;
+-(void)setNavigationHighlightColor:(UIColor *)color;
 @end

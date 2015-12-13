@@ -42,6 +42,7 @@ typedef enum
 
 @property UIReturnKeyType keyboardReturnKeyType;
 @property UIKeyboardType keyboardType;
+@property UIKeyboardAppearance keyboardAppearance;
 
 @property BOOL displayCameraButton;
 @property BOOL displaySendButton;
@@ -67,6 +68,8 @@ typedef enum
 -(void)sendMessage;
 
 -(CGFloat)cellHeightForHTML:(NSString *)html atIndexPath:(NSIndexPath *)indexPath maxCellWidth:(CGFloat)width cellStyle:(MECellStyle)cellStyle;
+
+-(void)setTextInputTextColor:(UIColor *)textColor;
 
 @end
 
