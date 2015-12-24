@@ -71,6 +71,8 @@ typedef enum
 
 -(void)setTextInputTextColor:(UIColor *)textColor;
 
+-(void)setHTMLText:(NSString *)html;
+
 @end
 
 @protocol METextInputViewDelegate <NSObject>
