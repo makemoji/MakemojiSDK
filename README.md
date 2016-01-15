@@ -5,9 +5,11 @@ Makemoji SDK
 
 **Makemoji** is a free emoji keyboard for mobile apps. 
 
-By installing our keyboard SDK every user of your app will instantly have access to new and trending emojis. Our goal is to increase user engagement as well as provide actionable real time data on sentiment (how users feel) and affinity (what users like). With this extensive data collection your per-user & company valuation will increase along with your user-base. 
+By installing our keyboard SDK every user of your app will instantly have access to new and trending emojis. Our goal is to increase user engagement as well as provide actionable real time data on sentiment (how users feel) and affinity (what users like). With this extensive data collection your per-user & company valuation will increase along with your user-base.
+ 
 **Features Include**
-* Extensive library of free emoji
+
+* Extensive library of free emoji
 * 722 standard Unicode emoji
 * Makemoji *Flashtag* inline search system
 
@@ -26,13 +28,13 @@ Library Setup
 
 * If you are using CocoaPods for dependencies, include the following.
 
-		pod "AFNetworking"
-		pod "SDWebImage"
+		pod "AFNetworking", "2.6.3"
+		pod "SDWebImage", "3.7.3"
 
 * If your are not using CocoaPods, be sure to include the following libraries.
 		
-	* [AFNetworking](https://github.com/AFNetworking/)
-	* [SDWebImage](https://github.com/rs/SDWebImage)
+	* [AFNetworking](https://github.com/AFNetworking/) 2.6.3
+	* [SDWebImage](https://github.com/rs/SDWebImage) 3.7.3
 
 * Drag the MakemojiSDK folder to your project.
 
@@ -269,9 +271,17 @@ You can set the MEChatTableViewCell to display on the left or right hand side us
 FAQ
 ---------------------
 
-*	The Makemoji SDK is completely free.*	All emojis are served from AWS S3.*	We do not store your messages. Your app backend will have to process and serve messages created with our SDK.*	We do not send push notifications.
-*	Your app's message volume does not affect the performance of our SDK.
-*	Messages are composed of simple HTML containing image and paragraph tags. Formatting is presented as inline CSS.
+*	The Makemoji SDK is completely free.
+
+*	All emojis are served from AWS S3.
+
+*	We do not store your messages. Your app backend will have to process and serve messages created with our SDK.
+
+*	We do not send push notifications.
+
+*	Your app's message volume does not affect the performance of our SDK.
+
+*	Messages are composed of simple HTML containing image and paragraph tags. Formatting is presented as inline CSS.
 
 *	Will work with any built-in iOS keyboard or return type
 
