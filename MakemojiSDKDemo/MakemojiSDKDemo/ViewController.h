@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "METextInputView.h"
+#import "MEEmojiWall.h"
 
-@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, METextInputViewDelegate>
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, METextInputViewDelegate, MEEmojiWallDelegate>
 @property UITableView * tableView;
 @property (nonatomic, retain) NSMutableArray * messages;
 @property (nonatomic, retain) METextInputView * meTextInputView;

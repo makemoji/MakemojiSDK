@@ -8,6 +8,7 @@
 #import "MEChatTableViewCell.h"
 #import "MESimpleTableViewCell.h"
 
+
 @interface ViewController ()
 
 @end
@@ -21,6 +22,26 @@
     
     self.meTextInputView = [[METextInputView alloc] initWithFrame:CGRectZero];
     self.meTextInputView.delegate = self;
+    
+    // customization options
+    /*
+        [self.meTextInputView setKeyboardAppearance:UIKeyboardAppearanceDark];
+        [self.meTextInputView setTextInputTextColor:[UIColor whiteColor]];
+        self.meTextInputView.placeholderLabel.textColor = [UIColor darkGrayColor];
+        self.meTextInputView.textSolidBackgroundView.backgroundColor = [UIColor colorWithRed:0.06 green:0.06 blue:0.08 alpha:1];
+        self.meTextInputView.textInputContainerView.backgroundColor = [UIColor colorWithRed:0.07 green:0.07 blue:0.11 alpha:1];
+        self.meTextInputView.barBackgroundImageView.backgroundColor = [UIColor colorWithRed:0.07 green:0.07 blue:0.11 alpha:1];
+    
+        [self.meTextInputView.meAccessory setNavigationBackgroundColor:[UIColor colorWithRed:0.07 green:0.07 blue:0.11 alpha:1]];
+        [self.meTextInputView.meAccessory setNavigationHighlightColor:[UIColor colorWithRed:0.10 green:0.10 blue:0.14 alpha:1]];
+        self.meTextInputView.meAccessory.backgroundColor = [UIColor colorWithRed:0.07 green:0.07 blue:0.11 alpha:1];
+        self.meTextInputView.meAccessory.flashtagCollectionView.backgroundColor = [UIColor colorWithRed:0.07 green:0.07 blue:0.11 alpha:1];
+        self.meTextInputView.meAccessory.emojiView.backgroundColor = [UIColor colorWithRed:0.07 green:0.07 blue:0.11 alpha:1];
+    
+        self.meTextInputView.meAccessory.meInputView.backgroundColor = [UIColor colorWithRed:0.10 green:0.10 blue:0.14 alpha:1];
+        self.meTextInputView.meAccessory.meInputView.emojiView.backgroundColor = [UIColor colorWithRed:0.10 green:0.10 blue:0.14 alpha:1];
+        self.meTextInputView.meAccessory.meInputView.collectionView.backgroundColor = [UIColor colorWithRed:0.10 green:0.10 blue:0.14 alpha:1];
+     */
     
     // possible options
     //self.meTextInputView.displaySendButton = NO;
@@ -47,9 +68,31 @@
     
 }
 
+-(void)openEmojiWall:(id)sender {
+    MEEmojiWall * emojiWall = [[MEEmojiWall alloc] init];
+    emojiWall.shouldDisplaySearch = YES;
+    emojiWall.delegate = self;
+    emojiWall.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    UINavigationController *navigationController =
+    [[UINavigationController alloc] initWithRootViewController:emojiWall];
+    [navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
+    [navigationController.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
+    [navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    [self presentViewController:navigationController animated:YES completion:nil];
+}
+
+
+-(void)meEmojiWall:(MEEmojiWall *)emojiWall didSelectEmoji:(NSDictionary*)emoji {
+    [emojiWall dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"%@", emoji);
+}
+
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self.meTextInputView showKeyboard];
+    
+    // test emoji wall
+    //[self openEmojiWall:nil];
 }
 
 -(void)viewWillAppear:(BOOL)animated {

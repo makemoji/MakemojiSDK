@@ -38,9 +38,25 @@
 		C66C0F691B509C7F00A3D52E /* MEPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F4C1B509C7F00A3D52E /* MEPlaceholder.png */; };
 		C66C0F6C1B509C7F00A3D52E /* METrendingIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F4F1B509C7F00A3D52E /* METrendingIcon.png */; };
 		C66C0F6D1B509C7F00A3D52E /* METrendingIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C66C0F501B509C7F00A3D52E /* METrendingIcon@2x.png */; };
-		C6BD29B21BD079D70046CA72 /* MERecent.png in Resources */ = {isa = PBXBuildFile; fileRef = C6BD29B01BD079D70046CA72 /* MERecent.png */; settings = {ASSET_TAGS = (); }; };
-		C6BD29B31BD079D70046CA72 /* MERecent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6BD29B11BD079D70046CA72 /* MERecent@2x.png */; settings = {ASSET_TAGS = (); }; };
-		C6BD29BB1BD07A060046CA72 /* libMakemojiSDK-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BD29B41BD07A060046CA72 /* libMakemojiSDK-1.0.a */; settings = {ASSET_TAGS = (); }; };
+		C6A6A0C61C59C62F004ED5FD /* MENav-osemoji@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A6A0B61C59C62F004ED5FD /* MENav-osemoji@2x.png */; };
+		C6A6A0C71C59C62F004ED5FD /* MENav-newsfeed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A6A0B71C59C62F004ED5FD /* MENav-newsfeed@2x.png */; };
+		C6A6A0C81C59C62F004ED5FD /* MENav-myemoji@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A6A0B81C59C62F004ED5FD /* MENav-myemoji@2x.png */; };
+		C6A6A0C91C59C62F004ED5FD /* MENav-gif@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A6A0B91C59C62F004ED5FD /* MENav-gif@2x.png */; };
+		C6A6A0CA1C59C62F004ED5FD /* MENav-politics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A6A0BA1C59C62F004ED5FD /* MENav-politics@2x.png */; };
+		C6A6A0CB1C59C62F004ED5FD /* MENav-trending@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A6A0BB1C59C62F004ED5FD /* MENav-trending@2x.png */; };
+		C6A6A0CC1C59C62F004ED5FD /* MENav-objects@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A6A0BC1C59C62F004ED5FD /* MENav-objects@2x.png */; };
+		C6A6A0CD1C59C62F004ED5FD /* MENav-animals@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A6A0BD1C59C62F004ED5FD /* MENav-animals@2x.png */; };
+		C6A6A0CE1C59C62F004ED5FD /* MENav-clothing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A6A0BE1C59C62F004ED5FD /* MENav-clothing@2x.png */; };
+		C6A6A0CF1C59C62F004ED5FD /* MENav-expression@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A6A0BF1C59C62F004ED5FD /* MENav-expression@2x.png */; };
+		C6A6A0D01C59C62F004ED5FD /* MENav-food@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A6A0C01C59C62F004ED5FD /* MENav-food@2x.png */; };
+		C6A6A0D11C59C62F004ED5FD /* MENav-hands@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A6A0C11C59C62F004ED5FD /* MENav-hands@2x.png */; };
+		C6A6A0D21C59C62F004ED5FD /* MENav-popculture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A6A0C21C59C62F004ED5FD /* MENav-popculture@2x.png */; };
+		C6A6A0D31C59C62F004ED5FD /* MENav-sports@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A6A0C31C59C62F004ED5FD /* MENav-sports@2x.png */; };
+		C6A6A0D41C59C62F004ED5FD /* MESmallClose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A6A0C41C59C62F004ED5FD /* MESmallClose@2x.png */; };
+		C6A6A0D51C59C62F004ED5FD /* MESearchIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A6A0C51C59C62F004ED5FD /* MESearchIcon@2x.png */; };
+		C6BD29B21BD079D70046CA72 /* MERecent.png in Resources */ = {isa = PBXBuildFile; fileRef = C6BD29B01BD079D70046CA72 /* MERecent.png */; };
+		C6BD29B31BD079D70046CA72 /* MERecent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6BD29B11BD079D70046CA72 /* MERecent@2x.png */; };
+		C6BD29BB1BD07A060046CA72 /* libMakemojiSDK-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BD29B41BD07A060046CA72 /* libMakemojiSDK-1.0.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +108,23 @@
 		C66C0F4C1B509C7F00A3D52E /* MEPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MEPlaceholder.png; sourceTree = "<group>"; };
 		C66C0F4F1B509C7F00A3D52E /* METrendingIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = METrendingIcon.png; sourceTree = "<group>"; };
 		C66C0F501B509C7F00A3D52E /* METrendingIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "METrendingIcon@2x.png"; sourceTree = "<group>"; };
+		C6A6A0B61C59C62F004ED5FD /* MENav-osemoji@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MENav-osemoji@2x.png"; sourceTree = "<group>"; };
+		C6A6A0B71C59C62F004ED5FD /* MENav-newsfeed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MENav-newsfeed@2x.png"; sourceTree = "<group>"; };
+		C6A6A0B81C59C62F004ED5FD /* MENav-myemoji@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MENav-myemoji@2x.png"; sourceTree = "<group>"; };
+		C6A6A0B91C59C62F004ED5FD /* MENav-gif@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MENav-gif@2x.png"; sourceTree = "<group>"; };
+		C6A6A0BA1C59C62F004ED5FD /* MENav-politics@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MENav-politics@2x.png"; sourceTree = "<group>"; };
+		C6A6A0BB1C59C62F004ED5FD /* MENav-trending@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MENav-trending@2x.png"; sourceTree = "<group>"; };
+		C6A6A0BC1C59C62F004ED5FD /* MENav-objects@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MENav-objects@2x.png"; sourceTree = "<group>"; };
+		C6A6A0BD1C59C62F004ED5FD /* MENav-animals@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MENav-animals@2x.png"; sourceTree = "<group>"; };
+		C6A6A0BE1C59C62F004ED5FD /* MENav-clothing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MENav-clothing@2x.png"; sourceTree = "<group>"; };
+		C6A6A0BF1C59C62F004ED5FD /* MENav-expression@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MENav-expression@2x.png"; sourceTree = "<group>"; };
+		C6A6A0C01C59C62F004ED5FD /* MENav-food@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MENav-food@2x.png"; sourceTree = "<group>"; };
+		C6A6A0C11C59C62F004ED5FD /* MENav-hands@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MENav-hands@2x.png"; sourceTree = "<group>"; };
+		C6A6A0C21C59C62F004ED5FD /* MENav-popculture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MENav-popculture@2x.png"; sourceTree = "<group>"; };
+		C6A6A0C31C59C62F004ED5FD /* MENav-sports@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MENav-sports@2x.png"; sourceTree = "<group>"; };
+		C6A6A0C41C59C62F004ED5FD /* MESmallClose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MESmallClose@2x.png"; sourceTree = "<group>"; };
+		C6A6A0C51C59C62F004ED5FD /* MESearchIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MESearchIcon@2x.png"; sourceTree = "<group>"; };
+		C6A6A0D61C59C659004ED5FD /* MEEmojiWall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MEEmojiWall.h; sourceTree = "<group>"; };
 		C6BD29B01BD079D70046CA72 /* MERecent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MERecent.png; sourceTree = "<group>"; };
 		C6BD29B11BD079D70046CA72 /* MERecent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MERecent@2x.png"; sourceTree = "<group>"; };
 		C6BD29B41BD07A060046CA72 /* libMakemojiSDK-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libMakemojiSDK-1.0.a"; sourceTree = "<group>"; };
@@ -203,6 +236,7 @@
 			children = (
 				C6BD29B41BD07A060046CA72 /* libMakemojiSDK-1.0.a */,
 				C6BD29B51BD07A060046CA72 /* MakemojiSDK.h */,
+				C6A6A0D61C59C659004ED5FD /* MEEmojiWall.h */,
 				C6BD29B61BD07A060046CA72 /* MEChatTableViewCell.h */,
 				C6BD29B71BD07A060046CA72 /* MEInputAccessoryView.h */,
 				C6BD29B81BD07A060046CA72 /* MEInputView.h */,
@@ -217,6 +251,22 @@
 		C66C0F3A1B509C7F00A3D52E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C6A6A0B61C59C62F004ED5FD /* MENav-osemoji@2x.png */,
+				C6A6A0B71C59C62F004ED5FD /* MENav-newsfeed@2x.png */,
+				C6A6A0B81C59C62F004ED5FD /* MENav-myemoji@2x.png */,
+				C6A6A0B91C59C62F004ED5FD /* MENav-gif@2x.png */,
+				C6A6A0BA1C59C62F004ED5FD /* MENav-politics@2x.png */,
+				C6A6A0BB1C59C62F004ED5FD /* MENav-trending@2x.png */,
+				C6A6A0BC1C59C62F004ED5FD /* MENav-objects@2x.png */,
+				C6A6A0BD1C59C62F004ED5FD /* MENav-animals@2x.png */,
+				C6A6A0BE1C59C62F004ED5FD /* MENav-clothing@2x.png */,
+				C6A6A0BF1C59C62F004ED5FD /* MENav-expression@2x.png */,
+				C6A6A0C01C59C62F004ED5FD /* MENav-food@2x.png */,
+				C6A6A0C11C59C62F004ED5FD /* MENav-hands@2x.png */,
+				C6A6A0C21C59C62F004ED5FD /* MENav-popculture@2x.png */,
+				C6A6A0C31C59C62F004ED5FD /* MENav-sports@2x.png */,
+				C6A6A0C41C59C62F004ED5FD /* MESmallClose@2x.png */,
+				C6A6A0C51C59C62F004ED5FD /* MESearchIcon@2x.png */,
 				C66C0F3B1B509C7F00A3D52E /* DTLoupe.bundle */,
 				C66C0F3C1B509C7F00A3D52E /* MEBackIcon.png */,
 				C66C0F3D1B509C7F00A3D52E /* MEBackIcon@2x.png */,
@@ -337,6 +387,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C66C0F621B509C7F00A3D52E /* MEGridIcon.png in Resources */,
+				C6A6A0D41C59C62F004ED5FD /* MESmallClose@2x.png in Resources */,
+				C6A6A0C71C59C62F004ED5FD /* MENav-newsfeed@2x.png in Resources */,
 				C66C0F681B509C7F00A3D52E /* MEMessageEntryInputField@2x.png in Resources */,
 				C64A767C1B449D350087F243 /* Main.storyboard in Resources */,
 				C66C0F671B509C7F00A3D52E /* MEMessageEntryInputField.png in Resources */,
@@ -344,23 +396,37 @@
 				C66C0F601B509C7F00A3D52E /* MEFlashtagIcon.png in Resources */,
 				C64A76811B449D350087F243 /* LaunchScreen.xib in Resources */,
 				C66C0F6D1B509C7F00A3D52E /* METrendingIcon@2x.png in Resources */,
+				C6A6A0D51C59C62F004ED5FD /* MESearchIcon@2x.png in Resources */,
 				C66C0F5B1B509C7F00A3D52E /* MECameraIcon.png in Resources */,
+				C6A6A0C91C59C62F004ED5FD /* MENav-gif@2x.png in Resources */,
+				C6A6A0CF1C59C62F004ED5FD /* MENav-expression@2x.png in Resources */,
 				C66C0F641B509C7F00A3D52E /* MEKeyPop@2x.png in Resources */,
 				C6BD29B21BD079D70046CA72 /* MERecent.png in Resources */,
 				C6BD29B31BD079D70046CA72 /* MERecent@2x.png in Resources */,
+				C6A6A0CB1C59C62F004ED5FD /* MENav-trending@2x.png in Resources */,
 				C66C0F6C1B509C7F00A3D52E /* METrendingIcon.png in Resources */,
 				C66C0F5A1B509C7F00A3D52E /* MEBackIcon@2x.png in Resources */,
+				C6A6A0D11C59C62F004ED5FD /* MENav-hands@2x.png in Resources */,
+				C6A6A0C81C59C62F004ED5FD /* MENav-myemoji@2x.png in Resources */,
 				C66C0F5C1B509C7F00A3D52E /* MECameraIcon@2x.png in Resources */,
 				C66C0F661B509C7F00A3D52E /* MEMessageEntryBackground@2x.png in Resources */,
+				C6A6A0CE1C59C62F004ED5FD /* MENav-clothing@2x.png in Resources */,
 				C66C0F631B509C7F00A3D52E /* MEGridIcon@2x.png in Resources */,
 				C66C0F5E1B509C7F00A3D52E /* MEChatBotRight@2x.png in Resources */,
+				C6A6A0D21C59C62F004ED5FD /* MENav-popculture@2x.png in Resources */,
+				C6A6A0CA1C59C62F004ED5FD /* MENav-politics@2x.png in Resources */,
+				C6A6A0D31C59C62F004ED5FD /* MENav-sports@2x.png in Resources */,
 				C66C0F691B509C7F00A3D52E /* MEPlaceholder.png in Resources */,
 				C66C0F651B509C7F00A3D52E /* MEMessageEntryBackground.png in Resources */,
 				C64A767E1B449D350087F243 /* Images.xcassets in Resources */,
 				C66C0F581B509C7F00A3D52E /* DTLoupe.bundle in Resources */,
+				C6A6A0CD1C59C62F004ED5FD /* MENav-animals@2x.png in Resources */,
+				C6A6A0D01C59C62F004ED5FD /* MENav-food@2x.png in Resources */,
 				C66C0F611B509C7F00A3D52E /* MEFlashtagIcon@2x.png in Resources */,
 				C66C0F5D1B509C7F00A3D52E /* MEChatBotLeft@2x.png in Resources */,
 				C66C0F591B509C7F00A3D52E /* MEBackIcon.png in Resources */,
+				C6A6A0C61C59C62F004ED5FD /* MENav-osemoji@2x.png in Resources */,
+				C6A6A0CC1C59C62F004ED5FD /* MENav-objects@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +541,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -518,6 +585,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

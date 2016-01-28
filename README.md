@@ -268,6 +268,56 @@ You can set the MEChatTableViewCell to display on the left or right hand side us
 ```
 
 
+**Emoji Wall**
+
+The Emoji Wall is a View Controller that allows your users to select one emoji from the makemoji library or the built-in iOS emoji.
+
+![](http://i.imgur.com/f62wUix.png)
+
+To display the emoji wall, use the following:
+
+```objectivec
+	// initialize the emoji wall view controller
+    MEEmojiWall * emojiWall = [[MEEmojiWall alloc] init];
+    emojiWall.delegate = self;
+    emojiWall.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+
+	// wrap view controller in navigation controller
+    UINavigationController *navigationController =
+    [[UINavigationController alloc] initWithRootViewController:emojiWall];
+
+    [navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
+    [navigationController.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
+    [navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+
+	// present the emoji wall as a modal
+    [self presentViewController:navigationController animated:YES completion:nil];
+
+```
+
+The search bar can be disabled by using the following when instantiating the controller
+
+```objectivec
+    emojiWall.shouldDisplaySearch = NO;
+```
+
+When a user selects an emoji from the wall, the following NSDictionary is returned to the Emoji Wall delegate.
+
+For Makemoji emoji:
+
+`
+{    "emoji_id" = 935;    "emoji_type" = makemoji;    "image_object" = "<UIImage: 0x7fdaa3f2e0a0>, {110, 110}";    "image_url" = "http://d1tvcfe0bfyi6u.cloudfront.net/emoji/935-large@2x.png";    name = Amused;}
+`
+
+For iOS emoji:
+
+`
+{    "emoji_id" = 18;    "emoji_type" = native;    name = "pensive face";    "unicode_character" = "\Ud83d\Ude14";}
+`
+
+
+
+
 FAQ
 ---------------------
 
