@@ -31,8 +31,10 @@
 @property UICollectionView * emojiView;
 
 @property BOOL flashtagOnly;
+@property BOOL disableNavigation;
 
 -(void)didSelectEmoji:(NSDictionary *)emoji image:(UIImage *)image;
+-(void)didSelectGif:(NSDictionary *)gif;
 -(void)didSelectCategory;
 -(void)deleteButtonTapped;
 -(void)resetFlashtags;

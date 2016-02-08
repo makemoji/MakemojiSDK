@@ -43,9 +43,14 @@ typedef enum
 @property UIReturnKeyType keyboardReturnKeyType;
 @property UIKeyboardType keyboardType;
 @property UIKeyboardAppearance keyboardAppearance;
+@property NSAttributedString * attributedString;
+@property NSString * HTMLText;
 
 @property BOOL displayCameraButton;
 @property BOOL displaySendButton;
+
+// should trigger send message when a gif is selected from the keyboard
+@property BOOL shouldAutosendGif;
 
 @property CGFloat currentKeyboardPosition;
 
@@ -71,13 +76,16 @@ typedef enum
 
 -(void)setTextInputTextColor:(UIColor *)textColor;
 
--(void)setHTMLText:(NSString *)html;
-
 @end
 
 @protocol METextInputViewDelegate <NSObject>
     -(void)meTextInputView:(METextInputView *)inputView didTapSend:(NSDictionary *)message;
     -(void)meTextInputView:(METextInputView *)inputView didTapHypermoji:(NSString*)urlString;
+    -(void)meTextInputView:(METextInputView *)inputView didTapHyperlink:(NSString*)urlString;
     -(void)meTextInputView:(METextInputView *)inputView didTapCameraButton:(UIButton*)cameraButton;
     -(void)meTextInputView:(METextInputView *)inputView didChangeFrame:(CGRect)frame;
+    @optional
+    -(void)meTextInputViewDidChange:(METextInputView *)inputView;
+    -(void)meTextInputViewDidBeginEditing:(METextInputView *)inputView;
+    -(void)meTextInputViewDidEndEditing:(METextInputView *)inputView;
 @end

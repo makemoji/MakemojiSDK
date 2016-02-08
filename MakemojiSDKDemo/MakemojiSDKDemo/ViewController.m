@@ -48,6 +48,12 @@
     //self.meTextInputView.displayCameraButton = NO;
     //self.meTextInputView.keyboardReturnKeyType = UIReturnKeySend;
     //self.meTextInputView.meAccessory.flashtagOnly = YES;
+
+    // disable navigation animation
+    //self.meTextInputView.meAccessory.disableNavigation = YES;
+    
+    // trigger the send callback when a gif is selected
+    //self.meTextInputView.shouldAutosendGif = YES;
     
     [self.view addSubview:self.meTextInputView];
     
@@ -112,6 +118,11 @@
 
 // handle tapping on linked emoji
 -(void)meTextInputView:(METextInputView *)inputView didTapHypermoji:(NSString*)urlString {
+       NSLog(@"%@", urlString); 
+}
+
+// handle tapping on linked text
+-(void)meTextInputView:(METextInputView *)inputView didTapHyperlink:(NSString*)urlString {
     NSLog(@"%@", urlString);
 }
 

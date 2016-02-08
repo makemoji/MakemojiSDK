@@ -1,7 +1,7 @@
 Makemoji SDK
 ====================
 
-![](http://i.imgur.com/Htwh2Ir.png)
+![](http://i.imgur.com/DqCktsY.png)
 
 **Makemoji** is a free emoji keyboard for mobile apps. 
 
@@ -127,7 +127,7 @@ In your view controller during viewDidLoad or init, initialize the METextInputVi
 
 **Detached Text Input**
 
-![](http://i.imgur.com/MInZIIj.png)
+![](http://i.imgur.com/WcnrLIo.png)
 
 If you need the Text Input detached from the keyboard, you will need to call the detachTextInputView method and then add textInputContainerView to your view.
 
@@ -272,7 +272,7 @@ You can set the MEChatTableViewCell to display on the left or right hand side us
 
 The Emoji Wall is a View Controller that allows your users to select one emoji from the makemoji library or the built-in iOS emoji.
 
-![](http://i.imgur.com/f62wUix.png)
+![](http://i.imgur.com/oEJMa5F.png)
 
 To display the emoji wall, use the following:
 

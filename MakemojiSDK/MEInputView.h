@@ -16,6 +16,7 @@
     @property NSIndexPath * selectedCategory;
     @property UICollectionView * collectionView;
     @property UICollectionView * emojiView;
+    @property UICollectionView * gifCategoryView;
 
     -(void)goBack;
     -(void)selectSection:(NSString *)section;
