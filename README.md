@@ -127,7 +127,7 @@ In your view controller during viewDidLoad or init, initialize the METextInputVi
 
 **Detached Text Input**
 
-![](http://i.imgur.com/WcnrLIo.png)
+![](http://i.imgur.com/L6Y4j28.png)
 
 If you need the Text Input detached from the keyboard, you will need to call the detachTextInputView method and then add textInputContainerView to your view.
 
