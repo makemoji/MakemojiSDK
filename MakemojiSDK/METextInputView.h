@@ -40,6 +40,9 @@ typedef enum
 // the navigation / trending keyboard bar
 @property IBOutlet MEInputAccessoryView * meAccessory;
 
+// only usable in detached input mode. adds a view on top of the Makemoji navigation bar.
+@property UIView * inputAccessoryView;
+
 @property UIReturnKeyType keyboardReturnKeyType;
 @property UIKeyboardType keyboardType;
 @property UIKeyboardAppearance keyboardAppearance;
