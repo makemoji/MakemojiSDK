@@ -79,6 +79,9 @@ typedef enum
 
 -(void)setTextInputTextColor:(UIColor *)textColor;
 
+// this method converts a substitued message back to html with default settings
+-(NSString *)convertSubstituedToHTML:(NSString *)substitute;
+
 @end
 
 @protocol METextInputViewDelegate <NSObject>

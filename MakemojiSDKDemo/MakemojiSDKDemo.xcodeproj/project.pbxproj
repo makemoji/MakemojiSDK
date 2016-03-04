@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		90B4B9C4D4A805C3845ACF1C /* libPods-MakemojiSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA21B03252CD5DFD8001B91 /* libPods-MakemojiSDKDemo.a */; };
+		C6111E201C8912DB0074981F /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6111E1F1C8912DB0074981F /* CustomTableViewCell.m */; };
 		C64A76731B449D350087F243 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C64A76721B449D350087F243 /* main.m */; };
 		C64A76761B449D350087F243 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C64A76751B449D350087F243 /* AppDelegate.m */; };
 		C64A76791B449D350087F243 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C64A76781B449D350087F243 /* ViewController.m */; };
@@ -72,6 +73,8 @@
 /* Begin PBXFileReference section */
 		5BA21B03252CD5DFD8001B91 /* libPods-MakemojiSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MakemojiSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E372812D6C086BE6090B71 /* Pods-MakemojiSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakemojiSDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MakemojiSDKDemo/Pods-MakemojiSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C6111E1E1C8912DB0074981F /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		C6111E1F1C8912DB0074981F /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		C64A766D1B449D350087F243 /* MakemojiSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakemojiSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64A76711B449D350087F243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C64A76721B449D350087F243 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -197,6 +200,8 @@
 				C64A76751B449D350087F243 /* AppDelegate.m */,
 				C64A76771B449D350087F243 /* ViewController.h */,
 				C64A76781B449D350087F243 /* ViewController.m */,
+				C6111E1E1C8912DB0074981F /* CustomTableViewCell.h */,
+				C6111E1F1C8912DB0074981F /* CustomTableViewCell.m */,
 				C64A767A1B449D350087F243 /* Main.storyboard */,
 				C64A767D1B449D350087F243 /* Images.xcassets */,
 				C64A767F1B449D350087F243 /* LaunchScreen.xib */,
@@ -495,6 +500,7 @@
 			files = (
 				C64A76791B449D350087F243 /* ViewController.m in Sources */,
 				C64A76761B449D350087F243 /* AppDelegate.m in Sources */,
+				C6111E201C8912DB0074981F /* CustomTableViewCell.m in Sources */,
 				C64A76731B449D350087F243 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

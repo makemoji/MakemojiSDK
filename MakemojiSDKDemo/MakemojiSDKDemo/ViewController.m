@@ -6,8 +6,7 @@
 #import "ViewController.h"
 #import "MakemojiSDK.h"
 #import "MEChatTableViewCell.h"
-#import "MESimpleTableViewCell.h"
-
+#import "CustomTableViewCell.h"
 
 @interface ViewController ()
 
@@ -106,16 +105,6 @@
     self.tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-self.meTextInputView.frame.size.height);
 }
 
-// send button was pressed
--(void)didTapSend:(NSDictionary *)messageDictionary {
-    NSLog(@"Your Message - %@", messageDictionary);
-    [self.messages addObject:messageDictionary];
-    [self.tableView reloadData];
-    
-    // scroll the table view to the bottom
-    [self scrollToBottom];
-}
-
 // handle tapping on linked emoji
 -(void)meTextInputView:(METextInputView *)inputView didTapHypermoji:(NSString*)urlString {
        NSLog(@"%@", urlString); 
@@ -153,12 +142,29 @@
     if (self.meTextInputView == nil) {
         return 0;
     }
+    //custom cell
+    
+    CGSize profileImage = CGSizeMake(50, 50);
+    CGFloat horizontalPadding = 5;
+    
+    NSDictionary * message = [self.messages objectAtIndex:indexPath.row];
+    CGFloat messageHeight =  [self.meTextInputView cellHeightForHTML:[message objectForKey:@"html"]
+                                                         atIndexPath:indexPath
+                                                        maxCellWidth:self.tableView.frame.size.width-profileImage.width-(horizontalPadding*5)
+                                                           cellStyle:MECellStyleSimple];
+    if (messageHeight < profileImage.height) {
+        return profileImage.height;
+    }
+    return messageHeight;
+    /*
+    
     
     NSDictionary * message = [self.messages objectAtIndex:indexPath.row];
     return [self.meTextInputView cellHeightForHTML:[message objectForKey:@"html"]
                                        atIndexPath:indexPath
                                       maxCellWidth:self.tableView.frame.size.width
                                          cellStyle:MECellStyleChat];
+     */
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -169,31 +175,31 @@
     static NSString *CellIdentifier = @"Cell";
     
     // Chat table cell
+//    
+//    MEChatTableViewCell  *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+//    
+//    if (cell == nil) {
+//        cell = [[MEChatTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+//    }
+//    
+//    // display chat cell on right side
+//    [cell setCellDisplay:MECellDisplayRight];
+//    
+//    // display chat cell on left side
+//    if (indexPath.row % 2) {
+//        [cell setCellDisplay:MECellDisplayLeft];
+//    }
     
-    MEChatTableViewCell  *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    // Custom Cell
+    
+    CustomTableViewCell  * cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
-        cell = [[MEChatTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[CustomTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    // display chat cell on right side
-    [cell setCellDisplay:MECellDisplayRight];
-    
-    // display chat cell on left side
-    if (indexPath.row % 2) {
-        [cell setCellDisplay:MECellDisplayLeft];
-    }
-    
-    
-    // Simple Cell
-    
-    /*
-     MESimpleTableViewCell  *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-     
-     if (cell == nil) {
-     cell = [[MESimpleTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-     }
-     */
+
     
     NSDictionary * message = [self.messages objectAtIndex:indexPath.row];
     [cell setHTMLString:[message objectForKey:@"html"]];
