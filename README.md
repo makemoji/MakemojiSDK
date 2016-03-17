@@ -27,9 +27,7 @@ Library Setup
 ---------------------
 
 * If you are using CocoaPods for dependencies, include the following.
-
-		pod "AFNetworking", "2.6.3"
-		pod "SDWebImage", "3.7.3"
+		pod "Makemoji-SDK"
 
 * If your are not using CocoaPods, be sure to include the following libraries.
 		
@@ -306,13 +304,24 @@ When a user selects an emoji from the wall, the following NSDictionary is return
 For Makemoji emoji:
 
 `
-{    "emoji_id" = 935;    "emoji_type" = makemoji;    "image_object" = "<UIImage: 0x7fdaa3f2e0a0>, {110, 110}";    "image_url" = "http://d1tvcfe0bfyi6u.cloudfront.net/emoji/935-large@2x.png";    name = Amused;}
+{
+    "emoji_id" = 935;
+    "emoji_type" = makemoji;
+    "image_object" = "<UIImage: 0x7fdaa3f2e0a0>, {110, 110}";
+    "image_url" = "http://d1tvcfe0bfyi6u.cloudfront.net/emoji/935-large@2x.png";
+    name = Amused;
+}
 `
 
 For iOS emoji:
 
 `
-{    "emoji_id" = 18;    "emoji_type" = native;    name = "pensive face";    "unicode_character" = "\Ud83d\Ude14";}
+{
+    "emoji_id" = 18;
+    "emoji_type" = native;
+    name = "pensive face";
+    "unicode_character" = "\Ud83d\Ude14";
+}
 `
 
 
