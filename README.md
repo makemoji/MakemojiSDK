@@ -27,6 +27,7 @@ Library Setup
 ---------------------
 
 * If you are using CocoaPods for dependencies, include the following.
+ 	
 		pod "Makemoji-SDK"
 
 * If your are not using CocoaPods, be sure to include the following libraries.
