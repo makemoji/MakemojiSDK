@@ -24,8 +24,8 @@ typedef enum
 // set HTML for the cell
 - (void)setHTMLString:(NSString *)html;
 
-+ (CGFloat)cellMaxWidth:(CGFloat)width;
-+ (CGFloat)heightWithInitialSize:(CGSize)size;
+-(CGFloat)cellMaxWidth:(CGFloat)width;
+-(CGFloat)heightWithInitialSize:(CGSize)size;
 
 // estimate the width of a cell with HTML constrained to width. includes bubble padding
 - (CGSize)suggestedFrameSizeToFitEntireStringConstraintedToWidth:(CGFloat)width;

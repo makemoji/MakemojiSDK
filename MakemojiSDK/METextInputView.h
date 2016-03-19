@@ -75,6 +75,7 @@ typedef enum
 // you can attach a custom button to this method as a action to trigger a send delegate call
 -(void)sendMessage;
 
+// returns a cached height for a cell. use this to avoid recalculating heights for collection or table view cells
 -(CGFloat)cellHeightForHTML:(NSString *)html atIndexPath:(NSIndexPath *)indexPath maxCellWidth:(CGFloat)width cellStyle:(MECellStyle)cellStyle;
 
 -(void)setTextInputTextColor:(UIColor *)textColor;

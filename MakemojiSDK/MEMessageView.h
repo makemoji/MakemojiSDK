@@ -9,10 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface MEMessageView : UIView
-// set HTML for the cell
+
+@property (readonly) UIView * textContentView;
+@property (readonly) NSAttributedString * attributedString;
+
 - (void)setHTMLString:(NSString *)html;
 
-// estimate the width of a cell with HTML constrained to width.
+// estimate the width of a view with HTML constrained to width.
 - (CGSize)suggestedFrameSizeToFitEntireStringConstraintedToWidth:(CGFloat)width;
+- (CGSize)suggestedSizeForTextForSize:(CGSize)size;
+- (CGSize)intrinsicContentSize;
 
 @end
