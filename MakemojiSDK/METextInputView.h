@@ -49,6 +49,8 @@ typedef enum
 @property NSAttributedString * attributedString;
 @property NSString * HTMLText;
 
+@property NSString * defaultFontFamily;
+
 @property BOOL displayCameraButton;
 @property BOOL displaySendButton;
 
@@ -82,6 +84,12 @@ typedef enum
 
 // this method converts a substitued message back to html with default settings
 +(NSString *)convertSubstituedToHTML:(NSString *)substitute;
+
++(NSString *)convertSubstituedToHTML:(NSString *)substitute withFont:(UIFont *)font textColor:(UIColor *)color;
+
+// scan a plaintext message and detect makemoji substituted strings
++(BOOL)detectMakemojiMessage:(NSString *)message;
+
 
 @end
 
