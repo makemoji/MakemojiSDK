@@ -100,6 +100,7 @@ typedef enum
     -(void)meTextInputView:(METextInputView *)inputView didTapCameraButton:(UIButton*)cameraButton;
     -(void)meTextInputView:(METextInputView *)inputView didChangeFrame:(CGRect)frame;
     @optional
+    -(void)meTextInputView:(METextInputView *)inputView selectedLockedCategory:(NSString *)category;
     -(void)meTextInputViewDidChange:(METextInputView *)inputView;
     -(void)meTextInputViewDidBeginEditing:(METextInputView *)inputView;
     -(void)meTextInputViewDidEndEditing:(METextInputView *)inputView;

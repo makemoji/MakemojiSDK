@@ -6,9 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
+static NSString *const MECategoryUnlockedSuccessNotification = @"MECategoryUnlockedSuccessNotification";
+static NSString *const MECategoryUnlockedFailedNotification = @"MECategoryUnlockedFailedNotification";
 
 @interface MakemojiSDK : NSObject
 
 +(void)setSDKKey:(NSString *)sdkKey;
-
++(void)unlockCategory:(NSString *)category;
++(NSArray *)unlockedGroups;
 @end
