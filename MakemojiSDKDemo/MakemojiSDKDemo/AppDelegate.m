@@ -19,7 +19,7 @@
     // Override point for customization after application launch.
 
     // setup your SDK key here
-    [MakemojiSDK setSDKKey:@"YOUR_SDK_KEY"];
+    [MakemojiSDK setSDKKey:@"940ced93abf2ca4175a4a865b38f1009d8848a58"];
     
     return YES;
 }

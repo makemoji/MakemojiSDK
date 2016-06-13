@@ -2,8 +2,7 @@
 platform :ios, '8.0'
 
 target 'MakemojiSDKDemo' do
-pod "AFNetworking", "2.6.3"
-pod 'SDWebImage', "3.7.3"
+pod "Makemoji-SDK"
 end
 
 target 'MakemojiSDKDemoTests' do
